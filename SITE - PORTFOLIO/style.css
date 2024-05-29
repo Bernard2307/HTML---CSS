@@ -1,0 +1,346 @@
+@charset "UTF-8";
+/* ESTILO GERAL DO SITE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  color: rgb(92, 89, 89);
+  background-color: rgb(9, 230, 20);
+  border: 0;
+  cursor: pointer;
+  transition: 1.5s;
+}
+
+h2.titulo {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+
+h2.titulo span {
+  color: #00ff80;
+}
+
+button:hover, form .btn-enviar input:hover {
+  transition: all 0.7s;
+  border-radius: 30px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 8px rgb(48, 108, 161);
+  transform: scale(1.1);
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: rgb(92, 89, 89);
+  text-decoration: none;
+  display: inline-block;
+}
+
+header a:hover {
+  color: rgb(255, 255, 255);
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+/* TOPO DO SITE */
+section .topo-do-site {
+  padding: 40px 4%;
+}
+
+section .topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site h1 {
+  color: rgb(221, 216, 216);
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: justify;
+  font-size: 37px;
+  line-height: 40px;
+  padding-left: 48px;
+}
+
+.topo-do-site .txt-topo-do-site p {
+  color: rgb(221, 216, 216);
+  padding-left: 48px;
+  font-weight: 100;
+  text-align: justify;
+  margin: 40px 0;
+}
+
+.topo-do-site .txt-topo-do-site .btn-contato {
+  padding-left: 48px;
+}
+
+.topo-do-site .img-topo-do-site img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+/* ESTILO DAS ESPECIALIDADES */
+section .especialidades {
+  padding: 40px 4%;
+}
+
+section .especialidades .flex {
+  gap: 60px;
+}
+
+.especialidades .especialidades-box {
+  color: white;
+  padding: 40px;
+  margin-top: 45px;
+  border-radius: 30px;
+  transition: 1s;
+  text-align: justify;
+}
+
+.especialidades .especialidades-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.292);
+}
+
+.especialidades .especialidades-box i {
+  font-size: 48px;
+  color: #00ff80;
+}
+
+.especialidades .especialidades-box h3 {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+/* ESTILO SOBRE */
+section .sobre {
+  padding: 40px 4%;
+}
+
+section .sobre .flex {
+  align-items: center;
+  gap: 50px;
+}
+
+.img-sobre {
+  padding-top: 30px;
+  padding-left: 38px;
+  padding-bottom: 80px;
+}
+
+.sobre .txt-sobre {
+  color: white;
+  padding-left: 30px;
+  padding-right: 25px;
+  padding-top: 100px;
+}
+
+.sobre .txt-sobre h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.sobre .txt-sobre h2 span {
+  color: #00ff80;
+  display: block;
+  line-height: 30px;
+}
+
+.sobre .txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.btn-social button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #00ff80;
+  font-size: 23px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: 1s;
+}
+
+/* ESTILO PORTFOLIO */
+section.portfolio {
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px rgb(63, 63, 63);
+}
+
+section.portfolio .interface .flex {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.img-port {
+  border-radius: 40px;
+  position: relative;
+  width: 360px;
+  height: 460px;
+  background-size: cover;
+  background-position: 100% 0%;
+  transition: background-position 0.5s ease;
+}
+
+.img-port:hover {
+  background-position: 100% 100%;
+  transition: 2s ease;
+}
+
+section.portfolio .interface .flex .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.379);
+  color: white;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+section.portfolio .interface .flex .img-port:hover .overlay {
+  opacity: 1;
+}
+
+/* ESTILO FORMULARIO */
+section .formulario {
+  padding: 80px 4%;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+form input, form textarea {
+  width: 100%;
+  background-color: rgba(60, 60, 60, 0.443);
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 20px;
+  color: white;
+  font-size: 15px;
+}
+
+form textarea {
+  resize: none;
+  max-height: 200px;
+}
+
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input {
+  width: 120px;
+  background-color: #00ff80;
+  cursor: pointer;
+  color: black;
+}
+
+/*ESTILO RODAPE*/
+footer {
+  padding: 60px 4%;
+  box-shadow: 0 0 40px 10px rgb(63, 63, 63);
+}
+
+footer .flex {
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .line-footer {
+  padding: 20px 0;
+}
+
+.borda {
+  border-bottom: 2px solid #00ff80;
+}
+
+footer .line-footer p i {
+  color: #00ff80;
+  font-size: 22px;
+}
+
+footer .line-footer p a {
+  color: #fff;
+}
+
+@media screen and (max-width: 1020px) {
+  .flex {
+    flex-direction: column;
+  }
+  .topo-do-site .flex {
+    flex-direction: column-reverse;
+  }
+  .menu-desktop, .btn-contato {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
